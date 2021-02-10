@@ -66,6 +66,15 @@ public class WorkoutConfirmActivity extends AppCompatActivity {
             }
         });
 
+        Button back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),MainActivity.class);
+                v.getContext().startActivity(intent);
+            }
+        });
+
 
 
     }
