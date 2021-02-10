@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/leveltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_alignParentLeft="true"
+            android:text="Level : "
+            />
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:focusable="true"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/leveltext"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text=""
+            />
+        <TextView
+            android:id="@+id/typetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_below="@id/leveltext"
+            android:layout_marginLeft="15dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_alignParentLeft="true"
+            android:text="Type: "
+            />
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_below="@id/leveltext"
+            android:layout_toRightOf="@+id/typetext"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text=" "
+            />
+        <TextView
+            android:id="@+id/durationtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:focusable="true"
+            android:layout_below="@+id/typetext"
+            android:layout_marginLeft="15dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_alignParentLeft="true"
+            android:text="Duration : "
+            />
+        <TextView
+            android:id="@+id/cas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:focusable="true"
+            android:layout_below="@+id/typetext"
+            android:layout_toRightOf="@+id/durationtext"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text=" "
+            />
+        <TextView
+            android:id="@+id/datetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:focusable="true"
+            android:layout_below="@+id/durationtext"
+            android:layout_marginLeft="15dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_alignParentLeft="true"
+            android:text="Date : "
+            />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:focusable="true"
+            android:layout_below="@+id/durationtext"
+            android:layout_toRightOf="@+id/datetext"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text=" "
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
